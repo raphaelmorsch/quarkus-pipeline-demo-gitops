@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: quarkus-pipelines-demo
+  labels:
+    app: quarkus-pipelines-demo
+spec:
+  selector:
+    app: quarkus-pipelines-demo
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+
