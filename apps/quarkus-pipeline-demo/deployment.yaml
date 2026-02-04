@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quarkus-pipelines-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: quarkus-pipelines-demo
+  template:
+    metadata:
+      labels:
+        app: quarkus-pipelines-demo
+    spec:
+      containers:
+        - name: app
+          image: image-registry.openshift-image-registry.svc:5000/demo-pipeline/quarkus-pipelines-demo@sha256:PLACEHOLDER
+          ports:
+            - containerPort: 8080
+
