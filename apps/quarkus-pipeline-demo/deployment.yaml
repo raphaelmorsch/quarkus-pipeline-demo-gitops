@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: image-registry.openshift-image-registry.svc:5000/demo-pipeline/quarkus-pipelines-demo@sha256:PLACEHOLDER
+          image: image-registry.openshift-image-registry.svc:5000/demo-pipeline/quarkus-pipelines-demo@sha256:503bd4feef4d3644b8afe7ca205b6f013514703ee2962c74d6aa97ddf98b036e
           ports:
             - containerPort: 8080
 
